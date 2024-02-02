@@ -1,0 +1,102 @@
+@import url("/vendor/normalize.css");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap");
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: #f4ebfc;
+  width: 100vw;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 24px;
+}
+
+form {
+  height: 50vh;
+  width: 80%;
+  border-radius: 5px;
+  background: #FAF5FF;
+  box-shadow: inset 5px 5px 10px #e9e4ed, inset -5px -5px 10px #ffffff;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+form section {
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+form section div {
+  width: 40%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+form section div label {
+  width: auto;
+  margin: 0;
+  font-weight: 400;
+}
+form section div input[type=text] {
+  width: 70%;
+  margin: 0;
+}
+form section div input[type=number] {
+  width: max-content;
+  margin: 0;
+}
+form section div input[type=radio] {
+  display: block;
+  cursor: pointer;
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+  transform: scale(1.5);
+}
+form section div label, form section div input {
+  font-size: 18px;
+  font-size: 1.2vw;
+  padding: 6px 6px;
+}
+form section .carType {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+form section .carType p {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+form button[type=submit] {
+  background-color: #bfc8e1;
+  border: none;
+  padding: 12px 34px;
+  font-size: 18px;
+  cursor: pointer;
+}
+form button[type=submit]:hover {
+  background-color: #6c87d7;
+}
+
+input[type=text], input[type=number] {
+  border: none;
+  outline: solid 2px #bfc8e1;
+  border-radius: 3px;
+}
+input[type=text]:focus, input[type=number]:focus {
+  outline: solid 3px #6c87d7;
+}
+
+.cardBox {
+  text-align: center;
+}/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objective 1</title>
+    <script src="data.js"></script>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <form id="carForm" onsubmit="event.preventDefault(); carformSubmit();">
+      <section>
+        <div class="">
+          <label for="name">Enter Name: </label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="">
+          <label for="model">Enter model:</label>
+          <input type="text" id="model" name="model" required />
+        </div>
+      </section>
+      <section>
+        <div class="">
+          <label for="year">Enter year: </label>
+          <input type="number" id="year" name="year" required />
+        </div>
+        <div class="Cap" id="Cap">
+          <label for="battCap">Enter battery capacity (kWh): </label>
+          <input type="number" id="battCap" name="battCap" />
+        </div>
+        <div class="FuelCap" style="display: none" id="FuelCap">
+          <label for="fuel">Enter fuel efficiency (MPG):</label>
+          <input type="number" id="fuel" name="fuel" />
+        </div>
+      </section>
+      <section>
+        <div class="carType">
+          <p>Enter car type:</p>
+          &nbsp;
+          <input
+            type="radio"
+            name="carType"
+            id="electric"
+            value="Electric"
+            onclick="typeSelected('electric')"
+            checked
+          />
+          <label for="electric">Electric</label>
+          &nbsp;
+          <input
+            type="radio"
+            name="carType"
+            id="gas"
+            value="Gas"
+            onclick="typeSelected('gas')"
+          />
+          <label for="gas">Gas</label>
+        </div>
+      </section>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h3>Card information:</h3>
+
+    <div class="cardBox" id="cardBox"></div>
+  </body>
+  <script src="main.js"></script>
+</html>
