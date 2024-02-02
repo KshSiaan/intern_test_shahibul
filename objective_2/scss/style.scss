@@ -1,0 +1,105 @@
+@import 'res';
+
+
+*{
+    font-family: 'Roboto', sans-serif;
+
+
+}
+body{
+    // background-color: $bg-200;
+    width: 100vw;
+    @include flexer(column, space-around, center);
+    padding-top: 24px;
+    overflow-x: hidden;
+}
+form{
+    height: 50vh;
+    width: 80%;
+
+    border-radius: 5px;
+    background: $bg;
+    box-shadow: inset 5px 5px 10px #e9e4ed,
+            inset -5px -5px 10px #ffffff;
+    margin: 0;
+    padding: 0;
+
+    section{
+        width: 100%;
+        @include flexer(row, space-around, flex-start);
+
+        div{
+        width: 40%;
+        @include flexer(row, space-between, center);
+            label{
+            width: auto;
+            margin: 0;
+            font-weight: 400;
+            }
+            input[type="text"]{
+                width:70%;
+                margin: 0;
+            }
+            input[type="number"]{
+                width:max-content;
+                margin: 0;
+
+            }
+            input[type="radio"]{
+                display: block;
+                cursor:pointer;
+                -ms-transform: scale(1.5); /* IE 9 */
+                -webkit-transform: scale(1.5); /* Chrome, Safari, Opera */
+                transform: scale(1.5);
+            }
+            label,input{
+                font-size: 18px;
+                font-size:1.2vw;
+                padding:6px 6px;
+
+            }
+        }
+        .carType{
+
+        p{
+font-size: 18px;
+margin: 0;
+padding: 0;
+        }
+        @include flexer(row,space-around,center)}
+    }
+
+    button[type="submit"]{
+        background-color: #bfc8e1;
+        border: none;
+        padding:12px 34px;
+        font-size:18px;
+        cursor: pointer;
+        &:hover{
+            background-color:#6c87d7;
+        }
+    }
+
+
+    @include flexer(column, space-around, center);
+}
+
+input[type="text"],input[type="number"]{
+    border: none;
+    outline: solid 2px #bfc8e1;
+    border-radius: 3px;
+    &:focus{
+        outline: solid 3px #6c87d7;
+    }
+}
+
+.cardBox{
+    text-align: center;
+
+}
+
+.tablePLace{
+width: 80% !important;}
+#example_filter {
+    text-align: right;
+}
